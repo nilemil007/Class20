@@ -1,0 +1,55 @@
+/*
+* Media query for screen
+* Min width 1200px
+*/
+@media screen and (min-width: 1200px){
+  header{
+    .main-nav{
+      display: block;
+    }
+    .mobile-nav{
+      display: none;
+    }
+  }
+}
+
+
+/*
+* Media query for screen
+* Max width 1199.98px
+*/
+@media screen and (max-width: 1199.98px){
+  header{
+    .main-nav{
+      display: none;
+    }
+    .mobile-nav{
+      display: flex;
+    }
+  }
+}
+
+
+/*
+* Media query for screen
+* Max width 767.98px
+*/
+@media screen and (max-width: 767.98px){
+  /* Banner Section */
+  .banner{
+    min-height: 400px;
+    img{
+      display: none;
+    }
+  }
+
+}
+
+
+/*
+* Media query for screen
+* Max width 575.98px
+*/
+@media screen and (max-width: 575.98px){
+
+}

@@ -1,0 +1,102 @@
+/* Google Font (Lato) */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+/* font-family: 'Lato', sans-serif; */
+
+/* Variables Start */
+$main-menu-clr: #4d4959;
+/* Variables End */
+
+/* Basic Style */
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Lato', sans-serif;
+}
+#menu{
+  text-align: center;
+  margin: 0;
+  li{
+    display: inline;
+    margin: 0 3rem;
+  }
+  a{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $main-menu-clr;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+/* Basic Style End */
+
+/* Mobole Menu Button */
+.toggle-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 10px 13px;
+  cursor: pointer;
+  .icon-bar{
+    width: 30px;
+    height: 2px;
+    background: gray;
+  }
+  .icon-bar:not(:last-child){
+    margin-bottom: 6px;
+  }
+}
+/* Mobole Menu Button End */
+
+
+/*
+* Header Section CSS Start Here
+*
+*/
+header{
+  position: relative;
+  // Navigation Menu
+  .main-nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 30px;
+  }
+  // Mobile Navigation Menu
+  .mobile-nav{
+    @extend .main-nav;
+    align-items: center;
+    justify-content: space-between;
+    .main-menu{
+      display: none;
+      position: absolute;
+      top: 68px;
+      left: 0;
+      width: 100%;
+      background-color: rgb(235, 237, 243);
+      li{
+        display: block !important;
+        padding: 6px 0px;
+        a:hover{
+          text-decoration: underline !important;
+        }
+      }
+    }
+  }
+}
+
+
+/* Banner Section */
+.banner{
+  background: url('assets/img/YEBO-Bicycle-banner.png') no-repeat center / cover;
+  img{
+    width: 100%;
+  }
+}
